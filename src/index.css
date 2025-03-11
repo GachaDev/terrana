@@ -1,0 +1,12 @@
+@import 'tailwindcss';
+
+@theme {
+	--font-special: 'Chiller', cursive;
+}
+
+@font-face {
+	font-family: 'Chiller';
+	src: url('/fonts/Chiller.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
