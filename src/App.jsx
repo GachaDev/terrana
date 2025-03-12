@@ -144,21 +144,21 @@ function App() {
 						>
 							<SwiperSlide>
 								<img
-									src='/escenario1.jpg'
+									src='/escenario1.webp'
 									alt='Escenario 1'
 									className='w-full h-[400px] object-cover rounded-lg shadow-lg'
 								/>
 							</SwiperSlide>
 							<SwiperSlide>
 								<img
-									src='/escenario2.jpg'
+									src='/escenario2.webp'
 									alt='Escenario 2'
 									className='w-full h-[400px] object-cover rounded-lg shadow-lg'
 								/>
 							</SwiperSlide>
 							<SwiperSlide>
 								<img
-									src='/escenario3.jpeg'
+									src='/escenario3.webp'
 									alt='Escenario 3'
 									className='w-full h-[400px] object-cover rounded-lg shadow-lg'
 								/>
