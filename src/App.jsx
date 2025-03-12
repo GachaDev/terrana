@@ -1,4 +1,8 @@
 import { Parallax } from 'react-scroll-parallax';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function App() {
 	return (
@@ -54,7 +58,7 @@ function App() {
 				</section>
 
 				{/* Sección de Historia */}
-				<section className='py-16 bg-neutral-900'>
+				<section id='historia' className='py-16 bg-neutral-900'>
 					<div className='max-w-3xl mx-auto text-center'>
 						<h3 className='text-4xl font-bold text-red-600 mb-8'>
 							La Historia de Terrana
@@ -70,7 +74,7 @@ function App() {
 				</section>
 
 				{/* Sección del Trailer */}
-				<section className='bg-neutral-800 py-16'>
+				<section id='trailer' className='bg-neutral-800 py-16'>
 					<div className='max-w-7xl mx-auto text-center'>
 						<h3 className='text-4xl font-bold text-red-600 mb-8'>Trailer</h3>
 
@@ -91,7 +95,7 @@ function App() {
 				</section>
 
 				{/* Sección de Personajes */}
-				<section className='bg-neutral-800 py-16'>
+				<section id='personajes' className='bg-neutral-800 py-16'>
 					<div className='max-w-7xl mx-auto text-center'>
 						<h3 className='text-4xl font-bold text-red-600 mb-8'>
 							Personajes
@@ -123,7 +127,46 @@ function App() {
 					</div>
 				</section>
 
-				{/* Llamada a la acción */}
+				{/* Sección de Escenarios (Carrusel) */}
+				<section id='escenarios' className='py-16 bg-neutral-800'>
+					<div className='max-w-7xl mx-auto text-center'>
+						<h3 className='text-4xl font-bold text-red-600 mb-8'>
+							Escenarios
+						</h3>
+
+						{/* Carrusel de Escenarios */}
+						<Swiper
+							spaceBetween={30}
+							slidesPerView={1}
+							navigation
+							pagination={{ clickable: true }}
+							loop
+						>
+							<SwiperSlide>
+								<img
+									src='/escenario1.jpg'
+									alt='Escenario 1'
+									className='w-full h-[400px] object-cover rounded-lg shadow-lg'
+								/>
+							</SwiperSlide>
+							<SwiperSlide>
+								<img
+									src='/escenario2.jpg'
+									alt='Escenario 2'
+									className='w-full h-[400px] object-cover rounded-lg shadow-lg'
+								/>
+							</SwiperSlide>
+							<SwiperSlide>
+								<img
+									src='/escenario3.jpeg'
+									alt='Escenario 3'
+									className='w-full h-[400px] object-cover rounded-lg shadow-lg'
+								/>
+							</SwiperSlide>
+						</Swiper>
+					</div>
+				</section>
+
 				<section className='py-16 bg-neutral-900 text-center'>
 					<h3 className='text-4xl font-bold text-red-600 mb-8'>
 						¿Estás listo para enfrentar el terror?

@@ -5,22 +5,22 @@ export default function Header() {
 			<nav>
 				<ul className='flex gap-5 items-center'>
 					<li>
-						<a href='#' className='text-lg hover:text-red-600'>
+						<a href='#trailer' className='text-lg hover:text-red-600'>
 							Trailer
 						</a>
 					</li>
 					<li>
-						<a href='#' className='text-lg hover:text-red-600'>
+						<a href='#historia' className='text-lg hover:text-red-600'>
 							Historia
 						</a>
 					</li>
 					<li>
-						<a href='#' className='text-lg hover:text-red-600'>
-							Escenario
+						<a href='#escenarios' className='text-lg hover:text-red-600'>
+							Escenarios
 						</a>
 					</li>
 					<li>
-						<a href='#' className='text-lg hover:text-red-600'>
+						<a href='#personajes' className='text-lg hover:text-red-600'>
 							Personajes
 						</a>
 					</li>
